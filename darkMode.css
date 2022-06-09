@@ -16,11 +16,20 @@ body {
     background-color: #007c9a;
 }
 
+.alert-success {
+    color: white;
+    background-color: #357535;
+}
+
 .panel-body {
     background-color: #4b4b4b;
 }
 
 .panel-heading {
+    background-color: #4b4b4b !important;
+}
+
+.list-group-item {
     background-color: #4b4b4b !important;
 }
 
@@ -47,7 +56,6 @@ input.btn-primary:hover {
     background-color: #ffac18 !important;
     color: black !important;
 }
-
 
 .btn-primary {
     border: 0.0625rem solid orange !important;
@@ -98,7 +106,7 @@ tr:hover {
 pre {
     background-color: #ff8181 !important;
 }
-.cm-tag, .cm-type {
+.cm-tag, .cm-type, .cm-builtin {
     color: lime !important;
 }
 
@@ -120,4 +128,24 @@ pre {
 
 .cm-comment {
     color: #ffb841 !important;
+}
+
+a.rasp-video-btn.btn-info {
+    background-color: #2686a2 !important;
+}
+
+a.rasp-video-btn.btn-primary {
+    background-color: #c17f05 !important;
+}
+
+a.rasp-video-btn.btn-default {
+    background-color: transparent !important;
+}
+
+nav {
+    background-color: #4b4b4b !important;
+}
+
+li a:hover {
+    background-color: #3a3a3a !important;
 }
