@@ -1,151 +1,210 @@
+:root {
+    --grey-darker: #2c2c2c;
+    --grey-medium: #282828;
+    --grey-lighter: #383838;
+    --grey-hover: #303030;
+    --text-color: #d0d0d0;
+    --orange: orange;
+    --orange-lighter: #d9821a;
+    --orange-darker: #c17f05;
+    --black: black;
+    --transparent: transparent;
+    --error-text: #500000;
+    --error-background: #f83d3d;
+}
+
 * {
-    color: #d0d0d0;
+    color: var(--text-color);
 }
 
 body {
-    background-color: #2c2c2c;
-}
-
-.alert-info {
-    color: #d0d0d0;
-    background-color: #be7114;
-}
-
-.alert-warning {
-    color: black;
-    background-color: #007c9a;
-}
-
-.alert-success {
-    color: white;
-    background-color: #357535;
+    background-color: var(--grey-darker);
 }
 
 .panel-body {
-    background-color: #4b4b4b;
+    background-color: var(--grey-lighter);
 }
 
 .panel-heading {
-    background-color: #4b4b4b !important;
-}
-
-.list-group-item {
-    background-color: #4b4b4b !important;
+    background-color: var(--grey-lighter) !important;
 }
 
 .panel-title {
-    color: #d0d0d0;
-}
-
-a {
-    color: orange !important;
-    background-color: transparent !important;
-}
-
-a:hover {
-    color: orange !important;
-    background-color: #4b4b4b !important;
-}
-
-input.btn-primary {
-    background-color: orange !important;
-    color: black !important;
-}
-
-input.btn-primary:hover {
-    background-color: #ffac18 !important;
-    color: black !important;
-}
-
-.btn-primary {
-    border: 0.0625rem solid orange !important;
-}
-
-.btn {
-    color: #d0d0d0 !important;
-}
-
-svg {
-    background-color: #4b4b4b !important;
-}
-
-svg path {
-    fill: orange !important;
-    stroke: #4b4b4b !important;
-}
-
-svg text {
-    color: white !important;
-}
-
-path:first-child {
-    stroke: #2c2c2c !important;
-}
-
-path:nth-child(2) {
-    stroke: #2c2c2c !important;
-}
-
-path:last-child {
-    fill: white !important;
-}
-
-tr.active * {
-    background-color: orange !important;
-    color: black !important;
-}
-
-tr:hover {
-    background-color: #4b4b4b !important;
-}
-
-.CodeMirror-scroll *, .panel-footer {
-    background-color: #4b4b4b !important;
-}
-
-pre {
-    background-color: #ff8181 !important;
-}
-.cm-tag, .cm-type, .cm-builtin {
-    color: lime !important;
-}
-
-.cm-keyword {
-    color: deeppink !important;
-}
-
-.cm-variable-2, .cm-def {
-    color: deepskyblue !important;
-}
-
-.cm-number {
-    color: turquoise !important;
-}
-
-.cm-bracket, .cm-meta {
-    color: white !important;
-}
-
-.cm-comment {
-    color: #ffb841 !important;
-}
-
-a.rasp-video-btn.btn-info {
-    background-color: #2686a2 !important;
-}
-
-a.rasp-video-btn.btn-primary {
-    background-color: #c17f05 !important;
-}
-
-a.rasp-video-btn.btn-default {
-    background-color: transparent !important;
+    color: var(--text-color);
 }
 
 nav {
-    background-color: #4b4b4b !important;
+    background-color: var(--grey-lighter) !important;
+}
+
+button.btn-primary, a.rasp-video-btn.btn-primary {
+    background-color: var(--orange-darker) !important;
 }
 
 li a:hover {
-    background-color: #3a3a3a !important;
+    background-color: var(--grey-medium) !important;
 }
+
+li.active a {
+    background-color: var(--grey-darker) !important;
+}
+
+li.active a:hover {
+    background-color: var(--grey-darker) !important;
+}
+
+a {
+    color: var(--orange) !important;
+    background-color: var(--transparent) !important;
+}
+
+a:hover {
+    color: var(--orange) !important;
+    background-color: var(--grey-lighter) !important;
+}
+
+a.btn-primary, a.btn-default, a.btn-info {
+    color: var(--text-color) !important;
+    background-color: var(--grey-medium) !important;
+}
+
+a.btn-primary:hover, a.btn-default:hover, a.btn-info:hover {
+    background-color: var(--grey-hover) !important;
+}
+
+a.rasp-video-btn.btn-default {
+    background-color: var(--transparent) !important;
+}
+
+input.btn-primary {
+    background-color: var(--orange) !important;
+    color: var(--black) !important;
+}
+
+input.btn-primary:hover {
+    background-color: var(--orange-lighter) !important;
+    color: var(--black) !important;
+}
+
+.btn-primary {
+    border: 0.0625rem solid var(--orange) !important;
+}
+
+.btn {
+    color: var(--text-color) !important;
+}
+
+svg path {
+    fill: var(--orange) !important;
+    stroke: var(--grey-lighter) !important;
+}
+
+svg text {
+    fill: var(--text-color) !important;
+}
+
+path:first-child {
+    stroke: var(--grey-darker) !important;
+}
+
+path:nth-child(2) {
+    stroke: var(--grey-darker) !important;
+}
+
+path:last-child {
+    fill: var(--text-color) !important;
+}
+
+tr.active * {
+    background-color: var(--orange) !important;
+    color: var(--black) !important;
+}
+
+tr:hover {
+    background-color: var(--grey-lighter) !important;
+}
+
+.CodeMirror-scroll *, .panel-footer {
+    background-color: var(--grey-lighter) !important;
+}
+
+.list-group-item {
+    background-color: var(--grey-lighter) !important;
+    color: var(--text-color) !important;
+}
+
+.list-group-item.active {
+    border: 0.0625rem solid var(--orange) !important;
+}
+
+.list-group-item:hover {
+    background-color: var(--grey-medium) !important;
+    color: var(--text-color) !important;
+}
+
+pre {
+    /*background-color: #ff8181 !important;*/
+    color: var(--text-color) !important;
+    background-color: var(--grey-lighter) !important;
+}
+
+.panel-danger > .panel-heading {
+    background-color: var(--error-background) !important;
+}
+
+.panel-danger > .panel-heading * {
+    color: var(--error-text);
+}
+
+span.label-success, span.label-danger, span.badge {
+    border: 0.0625rem solid var(--black) !important;
+}
+
+.alert-info {
+    background-color: #5d5030 !important;
+}
+
+.alert-warning {
+    background-color: #59666b !important;
+}
+
+.alert-success {
+    background-color: #357535 !important;
+}
+
+
+
+
+/* TODO: Shown in Code editor */
+.cm-tag, .cm-type, .cm-builtin {
+    color: lime !important;
+}
+.cm-keyword {
+    color: #ef3498 !important;
+}
+.cm-variable-2, .cm-def {
+    color: deepskyblue !important;
+}
+.cm-number {
+    color: turquoise !important;
+}
+.cm-bracket, .cm-meta {
+    color: white !important;
+}
+.cm-comment {
+    color: #ffb841 !important;
+}
+a.rasp-video-btn.btn-info {
+    background-color: #2686a2 !important;
+}
+/* TODO END: */
+
+/* TODO: */
+code {
+
+}
+/* TODO END: */
+
+/* TODO */
+::selection {}
+/* TODO END: */
